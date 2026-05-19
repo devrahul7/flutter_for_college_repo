@@ -10,8 +10,30 @@ class GridViewScreen extends StatelessWidget {
         title: const Text('GridView'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      body: const Center(
-        child: Text('gridview', style: TextStyle(fontSize: 24)),
+      body: GridView.count(
+        padding: const EdgeInsets.all(8),
+        crossAxisSpacing: 8,
+        mainAxisSpacing: 8,
+        crossAxisCount: 3,
+        children: [
+          
+
+
+          for (int i = 1; i < 10; i++) ...{
+            Container(
+              alignment: Alignment.center,
+              color: i % 2 == 0 ? Colors.yellow : Colors.green,
+              // color: Colors.amber,
+              child: 
+              TextButton(onPressed: () {}, child:  Text('$i',
+                
+                style: TextStyle(fontSize: 50, color: Colors.black)
+                )
+              ,
+              ),
+            ),
+          },
+        ],
       ),
     );
   }
