@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_for_college/screens/calculator_screen_view.dart';
-import 'package:flutter_for_college/screens/dashboard_screen.dart';
+import 'package:flutter_for_college/screens/calculator_view.dart';
+// import 'package:flutter_for_college/screens/dashboard_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CalculatorScreenView(),
+      home: const CalculatorView(),
     );
   }
 }
