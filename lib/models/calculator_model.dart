@@ -33,8 +33,7 @@ class CalculatorModel {
   //   }
   // }
 
-  
-// Store operator
+  // Store operator
   void setOperator(String op) {
     // If the user presses an operator first, default the first number to '0'
     if (_display.isEmpty) {
@@ -48,7 +47,6 @@ class CalculatorModel {
     _operator = op;
     _display = '';
   }
-
 
   // Calculate result
   void calculate() {

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_for_college/screens/calculator_view.dart';
+import 'package:flutter_for_college/screens/bottoms_screen/dashboard2_screen.dart';
+import 'package:flutter_for_college/screens/stack_layout2_screen.dart';
+// import 'package:flutter_for_college/screens/calculator_view.dart';
+// import 'package:flutter_for_college/screens/dashboard_screen.dart';
+// import 'package:flutter_for_college/screens/stack_layout2_screen.dart';
 // import 'package:flutter_for_college/screens/dashboard_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -14,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CalculatorView(),
+      home: const StackLayout2Screen(),
     );
   }
 }
